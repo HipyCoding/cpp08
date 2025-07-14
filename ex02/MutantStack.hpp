@@ -6,7 +6,7 @@
 /*   By: candrese <candrese@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 23:20:44 by candrese          #+#    #+#             */
-/*   Updated: 2025/07/14 03:13:34 by candrese         ###   ########.fr       */
+/*   Updated: 2025/07/14 15:39:06 by candrese         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,9 @@ public:
 	const_reverse_iterator rend() const;
 };
 
+// reason for the typedef aliases:
+// MutantStack<int>::iterator it1 = mstack.begin();  // cleaner
+// std::deque<int>::iterator  it2 = mstack.begin();  // messy
 
 #include "MutantStack.tpp"
 
